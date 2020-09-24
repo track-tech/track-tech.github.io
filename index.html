@@ -594,7 +594,7 @@
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s12">
             <div id="dplayer" class="dplayer-video"
-                    ></div>
+                     style="height: 400# 如：400px;"></div>
         </div>
     </div>
 </div>
@@ -604,14 +604,14 @@
     $(function () {
         new DPlayer({
             container: document.getElementById('dplayer'),
-            autoplay: 'true' === 'true',
+            autoplay: 'false' === 'true',
             theme: '#42b983',
             loop: 'false' === 'true',
             lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
             preload: 'auto',
             volume: Number('0.7'),
             video: {
-                url: 'https://www.bilibili.com/video/BV18s411Q75G# 必填',
+                url: '/player.bilibili.com/player.html?aid=4055623&bvid=BV18s411Q75G#%20%E5%BF%85%E5%A1%AB',
                 pic: '',
                 thumbnails: ''
             }
