@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建Hexo博客中遇到的问题及其解决方法Ⅰ, 极客">
+    <meta name="keywords" content="搭建Hexo博客Ⅰ, 极客">
     <meta name="description" content="极客，大学生">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>搭建Hexo博客中遇到的问题及其解决方法Ⅰ | Tracker</title>
+    <title>搭建Hexo博客Ⅰ | Tracker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">搭建Hexo博客中遇到的问题及其解决方法Ⅰ</h1>
+                    <h1 class="description center-align post-title">搭建Hexo博客Ⅰ</h1>
                 </div>
             </div>
         </div>
@@ -430,8 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                                <span class="chip bg-color">技术</span>
+                            <a href="/tags/%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">技术 博客搭建</span>
                             </a>
                         
                     </div>
@@ -479,8 +479,27 @@
 <h3 id="4-搭建过程中感觉怎么样"><a href="#4-搭建过程中感觉怎么样" class="headerlink" title="4.搭建过程中感觉怎么样"></a>4.搭建过程中感觉怎么样</h3><p><strong><em>痛 并 快 乐</em></strong></p>
 <hr>
 <p><strong>接下来就是正题了，我会慢慢一期一期更新的</strong></p>
-<h1 id="搭建教程"><a href="#搭建教程" class="headerlink" title="搭建教程"></a>搭建教程</h1><h2 id="1-搭建博客所需材料"><a href="#1-搭建博客所需材料" class="headerlink" title="1.搭建博客所需材料"></a>1.搭建博客所需材料</h2><p>你，电脑，不怕麻烦有耐心的心</p>
-<h2 id="2-具体步骤"><a href="#2-具体步骤" class="headerlink" title="2. 具体步骤"></a>2. 具体步骤</h2>
+<h1 id="搭建教程"><a href="#搭建教程" class="headerlink" title="搭建教程"></a>搭建教程</h1><p><u><strong><em>（这篇教程通篇都是基于Windows系统下进行的，也会涉及到Linxu的部分命令）</em></strong></u></p>
+<h2 id="1-搭建博客所需材料"><a href="#1-搭建博客所需材料" class="headerlink" title="1.搭建博客所需材料"></a>1.搭建博客所需材料</h2><p>你，电脑，不怕麻烦的脑子</p>
+<h2 id="2-准备环境"><a href="#2-准备环境" class="headerlink" title="2. 准备环境"></a>2. 准备环境</h2><ul>
+<li><p>Node.js:<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">node.js官网</a></p>
+</li>
+<li><p>Git:<a target="_blank" rel="noopener" href="https://git-scm.com/">Git官网</a></p>
+</li>
+</ul>
+<p>Node.js选择LTS版（长期支持版）就可以了</p>
+<blockquote>
+<p>Git(读音为/gɪt/。bai)是一个开源的分布du式版本控制系统，可以有效zhi、高速地处理从很小到dao非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+</blockquote>
+<p>你可以把这东西当作一个命令行使唤，可以在Git Bush下运行Linux的命令，但除了这个作用，就是为hexo环境（应该是，在我安装Hexo时要求我必须装Git）</p>
+<p>Hexo是基于node.js环境的静态博客，所以必须装node.js</p>
+<p>在Node.js安装好后，会同时安装npm，npm是随同Node.js一起安装的包管理工具，能解决Node.js代码部署上的很多问题</p>
+<p>（其实就是个软件安装器）</p>
+<p>你可以通过以下指令来查看其是否安装好</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo -v  #查看hexo版本</span><br><span class="line">npm -v   #查看npm版本</span><br></pre></td></tr></table></figure>
+
+<p>如果上边的安装不会，就去问度娘吧，网上教程很多</p>
+
             </div>
             <hr/>
 
@@ -543,8 +562,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                                    <span class="chip bg-color">技术</span>
+                                <a href="/tags/%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">技术 博客搭建</span>
                                 </a>
                             
                         </div>
@@ -595,9 +614,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="搭建Hexo博客中遇到的问题及其解决方法Ⅰ">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="搭建Hexo博客Ⅰ">
                         
-                        <span class="card-title">搭建Hexo博客中遇到的问题及其解决方法Ⅰ</span>
+                        <span class="card-title">搭建Hexo博客Ⅰ</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -626,8 +645,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">技术</span>
+                    <a href="/tags/%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">技术 博客搭建</span>
                     </a>
                     
                 </div>
