@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建Hexo博客Ⅰ, 极客">
+    <meta name="keywords" content="搭建个人Hexo博客, 极客">
     <meta name="description" content="极客，大学生">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>搭建Hexo博客Ⅰ | Tracker</title>
+    <title>搭建个人Hexo博客 | Tracker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">搭建Hexo博客Ⅰ</h1>
+                    <h1 class="description center-align post-title">搭建个人Hexo博客</h1>
                 </div>
             </div>
         </div>
@@ -484,6 +484,9 @@
 <hr>
 <p><strong>接下来就是正题了，我会慢慢一期一期更新的</strong></p>
 <h1 id="搭建教程"><a href="#搭建教程" class="headerlink" title="搭建教程"></a>搭建教程</h1><p><u><strong><em>（这篇教程通篇都是基于Windows系统下进行的，也会涉及到Linxu的部分命令）</em></strong></u></p>
+<blockquote>
+<p>本人搭建Hexo博客参考视频资料<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&seid=4861196362211471908">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo–B站UP主codesheep</a>这个教程做的很好，你们可以参考我的过程以及他的过程结合来看</p>
+</blockquote>
 <h2 id="1-搭建博客所需材料"><a href="#1-搭建博客所需材料" class="headerlink" title="1.搭建博客所需材料"></a>1.搭建博客所需材料</h2><p>你，电脑，不怕麻烦的脑子</p>
 <h2 id="2-准备环境"><a href="#2-准备环境" class="headerlink" title="2. 准备环境"></a>2. 准备环境</h2><ul>
 <li><p>Node.js:<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">node.js官网</a></p>
@@ -493,6 +496,9 @@
 </ul>
 <p>Node.js选择LTS版（长期支持版）就可以了</p>
 <blockquote>
+<p>Node.js 是一个基于 Chrome V8 引擎的 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/JavaScript/321142">JavaScript</a> 运行环境。</p>
+</blockquote>
+<blockquote>
 <p>Git(读音为/gɪt/。bai)是一个开源的分布du式版本控制系统，可以有效zhi、高速地处理从很小到dao非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 </blockquote>
 <p>你可以把这东西当作一个命令行使唤，可以在Git Bush下运行Linux的命令，但除了这个作用，就是为hexo环境（应该是，在我安装Hexo时要求我必须装Git）</p>
@@ -500,11 +506,24 @@
 <p>在Node.js安装好后，会同时安装npm，npm是随同Node.js一起安装的包管理工具，能解决Node.js代码部署上的很多问题</p>
 <p>（其实就是个软件安装器）</p>
 <p>你可以通过以下指令来查看其是否安装好</p>
-<pre class=" language-c"><code class="language-c">node <span class="token operator">-</span>v  #查看node版本
-npm <span class="token operator">-</span>v   #查看npm版本</code></pre>
+<pre><code>node -v  #查看node版本
+npm -v   #查看npm版本</code></pre>
 <p>效果是这样的</p>
+<img src="https://note.youdao.com/yws/api/personal/file/E6911725B64A40B987DA8A5DB854B248?method=download&shareKey=ca49c4c54d7b8cb58bea4a9767726aff" alt="实际效果" style="zoom: 67%;" />
+
 <p>如果上边的安装不会，就去问度娘吧，网上教程很多</p>
-<p>（先咕咕了，明天考驾照）（拿到驾照了继续写）</p>
+<p>在正式搭建开始前，你还需要借助npm来安装cnpm，即国内镜像源，因为众所周知的原因<del>（墙太高）</del>，原npm下载速度太过缓慢，所以改用cnpm会更快</p>
+<pre><code>npm install -g cnpm --registry=http://registry.npm.taobao.org    #安装淘宝的cnpm</code></pre>
+<p>同样你可以借助查看软件版本来检查是否安装成功</p>
+<pre><code>cnpm -v #查看cnpm版本</code></pre>
+<h2 id="3-开始搭建"><a href="#3-开始搭建" class="headerlink" title="3.开始搭建"></a>3.开始搭建</h2><p>搭建过程十分简单</p>
+<h3 id="Ⅰ-本地部署"><a href="#Ⅰ-本地部署" class="headerlink" title="Ⅰ.本地部署"></a>Ⅰ.本地部署</h3><p>1.创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘</p>
+<img src="https://note.youdao.com/yws/api/personal/file/5874A3A668064F469FA2C1461297E2B2?method=download&shareKey=08f11eca41e6b2cc612ab6e09d456811" alt="创建blog目录" style="zoom:67%;" />
+
+<p>当然你也可以在cmd命令行界面下进行创建</p>
+<pre><code>cd /d d:/   #进入D盘
+mkdir blog    #创建blog目录
+cd blog     #进入D盘中的blog文件夹</code></pre>
 
             </div>
             <hr/>
@@ -624,9 +643,9 @@ npm <span class="token operator">-</span>v   #查看npm版本</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="搭建Hexo博客Ⅰ">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="搭建个人Hexo博客">
                         
-                        <span class="card-title">搭建Hexo博客Ⅰ</span>
+                        <span class="card-title">搭建个人Hexo博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
