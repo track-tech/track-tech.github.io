@@ -517,13 +517,24 @@ npm -v   #查看npm版本</code></pre>
 <p>同样你可以借助查看软件版本来检查是否安装成功</p>
 <pre><code>cnpm -v #查看cnpm版本</code></pre>
 <h2 id="3-开始搭建"><a href="#3-开始搭建" class="headerlink" title="3.开始搭建"></a>3.开始搭建</h2><p>搭建过程十分简单</p>
-<h3 id="Ⅰ-本地部署"><a href="#Ⅰ-本地部署" class="headerlink" title="Ⅰ.本地部署"></a>Ⅰ.本地部署</h3><p>1.创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘</p>
-<img src="https://note.youdao.com/yws/api/personal/file/5874A3A668064F469FA2C1461297E2B2?method=download&shareKey=08f11eca41e6b2cc612ab6e09d456811" alt="创建blog目录" style="zoom:67%;" />
+<h3 id="Ⅰ-本地部署"><a href="#Ⅰ-本地部署" class="headerlink" title="Ⅰ.本地部署"></a>Ⅰ.本地部署</h3><h4 id="1-创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘"><a href="#1-创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘" class="headerlink" title="1.创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘"></a>1.创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘</h4><img src="https://note.youdao.com/yws/api/personal/file/5874A3A668064F469FA2C1461297E2B2?method=download&shareKey=08f11eca41e6b2cc612ab6e09d456811" alt="创建blog目录" style="zoom:67%;" />
 
 <p>当然你也可以在cmd命令行界面下进行创建</p>
 <pre><code>cd /d d:/   #进入D盘
 mkdir blog    #创建blog目录
 cd blog     #进入D盘中的blog文件夹</code></pre>
+<h4 id="2-安装hexo框架"><a href="#2-安装hexo框架" class="headerlink" title="2.安装hexo框架"></a>2.安装hexo框架</h4><p>在准备环节我们已经安装了cnpm，所以以下就使用cnpm来安装hexo</p>
+<pre><code>cnpm install -g hexo-cli    #安装hexo框架</code></pre>
+<p>你也可以通过npm来安装</p>
+<pre><code>npm install -g hexo-cli    #通过npm安装hexo框架</code></pre>
+<p>同样，你可以通过检查版来确认是否安装成功</p>
+<pre><code>hexo -v #查看hexo版本</code></pre>
+<p><img src="https://note.youdao.com/yws/api/personal/file/C87AD713060E421BA92CE8F1C44A608A?method=download&shareKey=52370cf730b938f0cac67c2bddd7d790" alt="查看hexo版本"></p>
+<h4 id="3-初始化博客"><a href="#3-初始化博客" class="headerlink" title="3.初始化博客"></a>3.初始化博客</h4><p>使用cmd或git bush进入d:/blog，进行博客初始化操作</p>
+<pre><code>hexo init #初始化博客</code></pre>
+<p>你也可以直接输入路径</p>
+<pre><code>hexo init &lt;folder&gt;
+hexo init d:/blog</code></pre>
 
             </div>
             <hr/>
@@ -549,7 +560,7 @@ cd blog     #进入D盘中的blog文件夹</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://baichuan2077.github.io/2020/09/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E2%85%A0/">https://baichuan2077.github.io/2020/09/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E2%85%A0/</a>
+                    <a href="https://baichuan2077.github.io/2020/09/27/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAHexo%E5%8D%9A%E5%AE%A2/">https://baichuan2077.github.io/2020/09/27/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAHexo%E5%8D%9A%E5%AE%A2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -639,7 +650,7 @@ cd blog     #进入D盘中的blog文件夹</code></pre>
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/09/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E2%85%A0/">
+                <a href="/2020/09/27/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAHexo%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
