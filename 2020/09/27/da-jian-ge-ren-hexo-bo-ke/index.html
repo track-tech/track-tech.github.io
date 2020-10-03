@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建个人Hexo博客, 极客">
+    <meta name="keywords" content="搭建个人Hexo博客-基础篇, 极客">
     <meta name="description" content="极客，大学生">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>搭建个人Hexo博客 | Tracker</title>
+    <title>搭建个人Hexo博客-基础篇 | Tracker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,7 +313,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">搭建个人Hexo博客</h1>
+                    <h1 class="description center-align post-title">搭建个人Hexo博客-基础篇</h1>
                 </div>
             </div>
         </div>
@@ -537,12 +537,68 @@ cd blog     #进入D盘中的blog文件夹</code></pre>
 <pre><code>npm install -g hexo-cli    #通过npm安装hexo框架</code></pre>
 <p>同样，你可以通过检查版来确认是否安装成功</p>
 <pre><code>hexo -v #查看hexo版本</code></pre>
-<p><img src="https://note.youdao.com/yws/api/personal/file/C87AD713060E421BA92CE8F1C44A608A?method=download&shareKey=52370cf730b938f0cac67c2bddd7d790" alt="查看hexo版本"></p>
+<img src="https://note.youdao.com/yws/api/personal/file/C87AD713060E421BA92CE8F1C44A608A?method=download&shareKey=52370cf730b938f0cac67c2bddd7d790" alt="查看hexo版本" style="zoom:67%;" />
+
+
+
+
+
 <h4 id="3-初始化博客"><a href="#3-初始化博客" class="headerlink" title="3.初始化博客"></a>3.初始化博客</h4><p>使用cmd或git bush进入d:/blog，进行博客初始化操作</p>
 <pre><code>hexo init #初始化博客</code></pre>
 <p>你也可以直接输入路径</p>
 <pre><code>hexo init &lt;folder&gt;</code></pre>
+<p>初始化完成后会生成一些文件</p>
+<img src="https://note.youdao.com/yws/api/personal/file/437EC37813C84688916249B75923BB9F?method=download&shareKey=95ef7991b5eb6d4005c11c6b23ff9de3" alt="参考" style="zoom:67%;" />
 
+<p>我因为之后美化+装插件，所以现在看到这些只有部分是初始化完成后生成的文件</p>
+<p>以下是Hexo官方给出的初始化完成后，指定文件夹的目录下的文件：</p>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes</code></pre>
+<p>hexo博客根目录下的_config.yml是博客的配置文件，后续可以对它进行修改，来实现一些功能</p>
+<p>我们这里暂且只实现一些简单功能，下一篇我会讲美化装主题</p>
+<p>如果你对其他文件或文件夹有疑惑，你可以通过查阅<a target="_blank" rel="noopener" href="https://hexo.bootcss.com/docs/setup.html">Hexo官方文档-建站</a>来了解</p>
+<h4 id="4-简单配置"><a href="#4-简单配置" class="headerlink" title="4.简单配置"></a>4.简单配置</h4><blockquote>
+<p>你可以参考<a target="_blank" rel="noopener" href="https://hexo.bootcss.com/docs/configuration.html">Hexo官方文档-配置</a>对你的配置文件进行修改</p>
+</blockquote>
+<p>这里放一部分我自己的，你可以对照我的博客来进行参考</p>
+<pre><code># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Tracker
+subtitle: Tracker`s blog
+description: 极客，大学生
+keywords: 极客
+author: 张百川
+language: zh-CN
+timezone: 
+
+# URL
+## If your site is put in a subdirectory, set url as &#39;http://example.com/child&#39; and root as &#39;/child/&#39;
+url:  https://baichuan2077.top
+root: /
+permalink: :year/:month/:day/:title/
+</code></pre>
+<h4 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h4><p>配置完成后，你就可以在本地查看博客效果了</p>
+<pre><code>hexo generate #生成博客静态文件
+hexo g #生成博客静态文件,也可以这样简写，执行的效果是相同的</code></pre>
+<pre><code>hexo server #启动服务器，即本地部署
+hexo s #命令简写</code></pre>
+<img src="https://note.youdao.com/yws/api/personal/file/48B3E434FF7C4EC384208A02EAB44E8B?method=download&shareKey=14b95ae723d3c9ce3be45f4a300cbbdb" alt="输入hexo g" style="zoom:67%;" />
+
+<img src="https://note.youdao.com/yws/api/personal/file/E2906237BA72458B80EE676578D758E1?method=download&shareKey=0ecd1e7face04f5fac87c9cb67450e2f" alt="输入hexo s" style="zoom:67%;" />
+
+<p>上面的是效果，第一次生成并不会有太多文件，我的图片仅供参考</p>
+<p>上面的<a href="https://localhost:4000即为本地访问地址，按Ctrl+C可以停止服务">https://localhost:4000即为本地访问地址，按Ctrl+C可以停止服务</a></p>
+<p>下面是参考效果：</p>
+<img src="https://note.youdao.com/yws/api/personal/file/AA16CDEE1D494C7F820EA8CAB9FF11FB?method=download&shareKey=894dac650aa07ec2f6b4bcf09469618c" alt="大致效果" style="zoom:67%;" />
             </div>
             <hr/>
 
@@ -664,9 +720,9 @@ cd blog     #进入D盘中的blog文件夹</code></pre>
                 <a href="/2020/09/27/da-jian-ge-ren-hexo-bo-ke/">
                     <div class="card-image">
                         
-                        <img src="https://note.youdao.com/yws/api/personal/file/5A1BDEEE271D466DB3FDE6219A0AA902?method=download&shareKey=fff01faa44140c1cd2a8d40ea34716e7" class="responsive-img" alt="搭建个人Hexo博客">
+                        <img src="https://note.youdao.com/yws/api/personal/file/5A1BDEEE271D466DB3FDE6219A0AA902?method=download&shareKey=fff01faa44140c1cd2a8d40ea34716e7" class="responsive-img" alt="搭建个人Hexo博客-基础篇">
                         
-                        <span class="card-title">搭建个人Hexo博客</span>
+                        <span class="card-title">搭建个人Hexo博客-基础篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
