@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>搭建个人Hexo博客</title>
+      <link href="2020/09/27/da-jian-ge-ren-hexo-bo-ke/"/>
+      <url>2020/09/27/da-jian-ge-ren-hexo-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="在正式写我搭建博客的过程之前的闲聊"><a href="#在正式写我搭建博客的过程之前的闲聊" class="headerlink" title="在正式写我搭建博客的过程之前的闲聊"></a>在正式写我搭建博客的过程之前的闲聊</h2><h3 id="1-关于我为何要搭建这个博客"><a href="#1-关于我为何要搭建这个博客" class="headerlink" title="1.关于我为何要搭建这个博客"></a>1.关于我为何要搭建这个博客</h3><p>搭建个人博客这件事我已经考虑很久了（怎么说也是混着这个圈子玩的，怎么能没有自己的博客呢233），高二的时候有过想法，但一直到高中结束也没能实现。现在高中毕业正值假期，就搭个博客。<del>反正就是闲的无聊</del></p><p>除了上面的原因，还有一个比较现实的理由，就是<strong>找工作</strong>，虽然说我现在所学的专业和我原本所期望的计算机专业不同，但未来我也很有可能去<del>抢学IT同学的饭碗</del>（笑），多一个博客可以让你在竞争时加分<del>容易抢饭碗</del>，咳咳，就这样。至于为何我会知道这个。<a href="https://www.bilibili.com/video/BV1Px411d74c">为什么程序员必须写技术博客?以及如何写?博客在面试时的加分可不是一点点-B站UP主CodeSheep</a>你可以看看这个，我个人觉得挺好。</p><h3 id="2-搭建一个博客难么？"><a href="#2-搭建一个博客难么？" class="headerlink" title="2.搭建一个博客难么？"></a>2.搭建一个博客难么？</h3><p>搭建一个个人博客并不困难<del>（除了对我这样的初学者，美化博客BUG一大堆，各种乱起八糟的balabalabala</del>)~~</p><p>搭建好部署到远端，可以给其他人访问是基础的操作，之后还可以给博客换主题，这就是后话了，我会逐步分享的</p><h3 id="3-你这博客有人看么？"><a href="#3-你这博客有人看么？" class="headerlink" title="3.你这博客有人看么？"></a>3.你这博客有人看么？</h3><p>这我不知道，反正闲着无聊，就当写日记了，总有人会来看吧</p><h3 id="4-搭建过程中感觉怎么样"><a href="#4-搭建过程中感觉怎么样" class="headerlink" title="4.搭建过程中感觉怎么样"></a>4.搭建过程中感觉怎么样</h3><p><strong><em>痛 并 快 乐</em></strong></p><hr><p><strong>接下来就是正题了，我会慢慢一期一期更新的</strong></p><h1 id="搭建教程"><a href="#搭建教程" class="headerlink" title="搭建教程"></a>搭建教程</h1><p><u><strong><em>（这篇教程通篇都是基于Windows系统下进行的，也会涉及到Linxu的部分命令）</em></strong></u></p><blockquote><p>本人搭建Hexo博客参考视频资料<a href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&seid=4861196362211471908">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo–B站UP主codesheep</a>这个教程做的很好，你们可以参考我的过程以及他的过程结合来看</p></blockquote><h2 id="1-搭建博客所需材料"><a href="#1-搭建博客所需材料" class="headerlink" title="1.搭建博客所需材料"></a>1.搭建博客所需材料</h2><p>你，电脑，不怕麻烦的脑子</p><h2 id="2-准备环境"><a href="#2-准备环境" class="headerlink" title="2. 准备环境"></a>2. 准备环境</h2><ul><li><p>Node.js:<a href="https://nodejs.org/zh-cn/">node.js官网</a></p></li><li><p>Git:<a href="https://git-scm.com/">Git官网</a></p></li></ul><p>Node.js选择LTS版（长期支持版）就可以了</p><blockquote><p>Node.js 是一个基于 Chrome V8 引擎的 <a href="https://baike.baidu.com/item/JavaScript/321142">JavaScript</a> 运行环境。</p></blockquote><blockquote><p>Git(读音为/gɪt/。bai)是一个开源的分布du式版本控制系统，可以有效zhi、高速地处理从很小到dao非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p></blockquote><p>你可以把这东西当作一个命令行使唤，可以在Git Bush下运行Linux的命令，但除了这个作用，就是为hexo环境（应该是，在我安装Hexo时要求我必须装Git）</p><p>Hexo是基于node.js环境的静态博客，所以必须装node.js</p><p>在Node.js安装好后，会同时安装npm，npm是随同Node.js一起安装的包管理工具，能解决Node.js代码部署上的很多问题</p><p>（其实就是个软件安装器）</p><p>你可以通过以下指令来查看其是否安装好</p><pre><code>node -v  #查看node版本npm -v   #查看npm版本</code></pre><p>效果是这样的</p><img src="https://note.youdao.com/yws/api/personal/file/E6911725B64A40B987DA8A5DB854B248?method=download&shareKey=ca49c4c54d7b8cb58bea4a9767726aff" alt="实际效果" style="zoom: 67%;" /><p>如果上边的安装不会，就去问度娘吧，网上教程很多</p><p>在正式搭建开始前，你还需要借助npm来安装cnpm，即国内镜像源，因为众所周知的原因<del>（墙太高）</del>，原npm下载速度太过缓慢，所以改用cnpm会更快</p><pre><code>npm install -g cnpm --registry=http://registry.npm.taobao.org    #安装淘宝的cnpm</code></pre><p>同样你可以借助查看软件版本来检查是否安装成功</p><pre><code>cnpm -v #查看cnpm版本</code></pre><h2 id="3-开始搭建"><a href="#3-开始搭建" class="headerlink" title="3.开始搭建"></a>3.开始搭建</h2><p>搭建过程十分简单</p><h3 id="Ⅰ-本地部署"><a href="#Ⅰ-本地部署" class="headerlink" title="Ⅰ.本地部署"></a>Ⅰ.本地部署</h3><h4 id="1-创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘"><a href="#1-创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘" class="headerlink" title="1.创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘"></a>1.创建一个用来存放博客的文件夹，例如blog，具体放在那里自己看，我放在了D盘</h4><img src="https://note.youdao.com/yws/api/personal/file/5874A3A668064F469FA2C1461297E2B2?method=download&shareKey=08f11eca41e6b2cc612ab6e09d456811" alt="创建blog目录" style="zoom:67%;" /><p>当然你也可以在cmd命令行界面下进行创建</p><pre><code>cd /d d:/   #进入D盘mkdir blog    #创建blog目录cd blog     #进入D盘中的blog文件夹</code></pre><h4 id="2-安装hexo框架"><a href="#2-安装hexo框架" class="headerlink" title="2.安装hexo框架"></a>2.安装hexo框架</h4><p>在准备环节我们已经安装了cnpm，所以以下就使用cnpm来安装hexo</p><pre><code>cnpm install -g hexo-cli    #安装hexo框架</code></pre><p>你也可以通过npm来安装</p><pre><code>npm install -g hexo-cli    #通过npm安装hexo框架</code></pre><p>同样，你可以通过检查版来确认是否安装成功</p><pre><code>hexo -v #查看hexo版本</code></pre><p><img src="https://note.youdao.com/yws/api/personal/file/C87AD713060E421BA92CE8F1C44A608A?method=download&shareKey=52370cf730b938f0cac67c2bddd7d790" alt="查看hexo版本"></p><h4 id="3-初始化博客"><a href="#3-初始化博客" class="headerlink" title="3.初始化博客"></a>3.初始化博客</h4><p>使用cmd或git bush进入d:/blog，进行博客初始化操作</p><pre><code>hexo init #初始化博客</code></pre><p>你也可以直接输入路径</p><pre><code>hexo init &lt;folder&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人经验 </category>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分享一下我很喜欢的MAD</title>
+      <link href="2020/09/25/fen-xiang-yi-xia-wo-hen-xi-huan-de-mad/"/>
+      <url>2020/09/25/fen-xiang-yi-xia-wo-hen-xi-huan-de-mad/</url>
+      
+        <content type="html"><![CDATA[<h3 id="分享一个我初中很喜欢的MAD，在我迷茫时给予我动力的正能量MAD"><a href="#分享一个我初中很喜欢的MAD，在我迷茫时给予我动力的正能量MAD" class="headerlink" title="分享一个我初中很喜欢的MAD，在我迷茫时给予我动力的正能量MAD"></a>分享一个我初中很喜欢的MAD，在我迷茫时给予我动力的正能量MAD</h3><p><a href="https://www.bilibili.com/video/BV18s411Q75G">【多素材/正能量燃泪混剪】这首歌曾经拯救了我的一切</a></p><p>UP主是Mr小丧   16年发布的</p><iframe src="//player.bilibili.com/player.html?aid=4055623&bvid=BV18s411Q75G&cid=6543593&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=600    width=800 >  </iframe><p>时隔多年看依旧很感动</p><p>当初用心做MAD的大佬，现在都被无情的资本伤透了心，只能说很无奈吧</p><p>以后有机会，我或许会自己开一个弹幕网站</p><p>Flag先立这里2333</p><p>插入视频用到HTML：</p><pre><code>&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=4055623&amp;bvid=BV18s411Q75G&amp;cid=6543593&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; height=600 width=800 &gt;  &lt;/iframe&gt;</code></pre><p>上边是实例演示</p><blockquote><p>  <a href="http://blog.fandong.me/2017/08/25/Markdown-Advance/">参考资料-Markdown高级用法(嵌套音视频)</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> ACGN </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MAD </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客中遇到的问题及其解决方法</title>
+      <link href="2020/09/23/da-jian-ge-ren-bo-ke-zhong-yu-dao-de-wen-ti-ji-qi-jie-jue-fang-fa/"/>
+      <url>2020/09/23/da-jian-ge-ren-bo-ke-zhong-yu-dao-de-wen-ti-ji-qi-jie-jue-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>现在博客还在初步测试中,之后我会把整个布置过程写出来</p><hr><h1 id="2020-09-23"><a href="#2020-09-23" class="headerlink" title="2020/09/23"></a>2020/09/23</h1><p>中午了，不想睡觉，就来写写博客吧   (顺便试试看用Markdown写博客是给啥感觉)</p><p>我最开始的方案是在nanopi neo 上搭建好再部署到github上，但nanopi neo 在使用过程中出现了很多问题，让我不得不放弃使用（应该是我技术辣鸡233）</p><p>出现的问题</p><ul><li><p><strong>由于是用于嵌入式开发的板子，所以使用的精简后的系统，我装的官方修改过的UbuntuCore</strong></p></li><li><p><strong>精简后的系统缺少了很多东西，让我找了半天，硬是敲指令装完</strong></p></li><li><p><strong>装的过程中发现下载巨慢，完了想起来都是国外的源，之后又改为国内的源</strong></p></li><li><p><strong>你以为这就完了？不，我发现我没有在安装时就弄好全局安装，哦吼，完蛋，继续搞</strong></p></li></ul><p>可能是由于node.js安装时出现问题，直到现在我也没能在那个小东西上部署博客</p><p>于是就改用了现在的方案：<strong>改用个人电脑搭建，就是按照我原本参考的视频教程完全照搬</strong></p><p>我参考的视频教程是B站的UP主CodeSheep发布的<a href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&seid=7070066021641660546">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></p><p>纯小白入门教程，但由于原作者是在MAC电脑上操作的，相对在Windows系统下的部分操作有不同之处，所以需要更改的地方还是有的</p><p>比如装GIT之类的，这些以后再说</p><p><strong>给你们看一下我原本要使用的nanopi:</strong></p><img src="http://a1.qpic.cn/psc?/V52S1Srv2ib0Lq3Soc2R4U5wOH3zM9Pn/ruAMsa53pVQWN7FLK88i5iEcOIP63bQZAyeLcxQcIZBMSVqfc8NDg7LKU0Ex3*A3PDHIOc6UNOcUu4VjujHd2039LztNvjmSmX5hMLeGd90!/c&ek=1&kp=1&pt=0&bo=QAZVCLAKQA4BKeE!&tl=3&vuin=309184637&tm=1600945200&sce=60-2-2&rf=0-0" alt="nanopi neo" style="zoom:50%;" /><p>这是和我手大小的对比，东西很小，4cm x 4 cm</p><p>从闲鱼上捡的2333</p><hr><p>有时间我继续写在windows系统下搭建hexo的经历和遇到的问题</p><ul><li><p><strong>新bug出现了，不过是图床的锅，上边那个图片显示不了(2020/9/23  20:07)</strong></p></li><li><p><strong>用了一个骚操作解决了233（用QQ空间当图床（2020/9/24 19:27)）</strong></p></li><li><p><strong>新的bug出现了，视频无法显示，来看看这回需要多久解决（2020/9/24 19:27)</strong></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人经历 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博文</title>
+      <link href="2020/09/22/wo-de-di-yi-pian-bo-wen/"/>
+      <url>2020/09/22/wo-de-di-yi-pian-bo-wen/</url>
+      
+        <content type="html"><![CDATA[<p>于此留念<br>张百川</p><p>高考完真闲啊</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2020/09/22/hello-world/"/>
+      <url>2020/09/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
