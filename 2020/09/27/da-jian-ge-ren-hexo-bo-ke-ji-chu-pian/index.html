@@ -507,7 +507,7 @@
 <p>Node.js 是一个基于 Chrome V8 引擎的 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/JavaScript/321142">JavaScript</a> 运行环境。</p>
 </blockquote>
 <blockquote>
-<p>Git(读音为/gɪt/。bai)是一个开源的分布du式版本控制系统，可以有效zhi、高速地处理从很小到dao非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+<p>Git(读音为/gɪt/。bai)是一个开源的分布du式版本控制系统，可以有效zhi、高速地处理从很小到到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 </blockquote>
 <p>你可以把这东西当作一个命令行使唤，可以在Git Bush下运行Linux的命令，但除了这个作用，就是为hexo环境（应该是，在我安装Hexo时要求我必须装Git）</p>
 <p>Hexo是基于node.js环境的静态博客，所以必须装node.js</p>
@@ -586,7 +586,7 @@ url:  https://baichuan2077.top
 root: /
 permalink: :year/:month/:day/:title/
 </code></pre>
-<h4 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h4><p>配置完成后，你就可以在本地查看博客效果了</p>
+<h4 id="5-启动"><a href="#5-启动" class="headerlink" title="5.启动"></a>5.启动</h4><p>配置完成后，你就可以在本地查看博客效果了<strong>（注意要在Hexo根目录下）</strong></p>
 <pre><code>hexo generate #生成博客静态文件
 hexo g #生成博客静态文件,也可以这样简写，执行的效果是相同的</code></pre>
 <pre><code>hexo server #启动服务器，即本地部署
@@ -605,7 +605,11 @@ hexo s #命令简写</code></pre>
 <p>如果你对怎样在GitHub上部署Hexo博客感兴趣，你可以去上面找CodeSheep的视频</p>
 <h4 id="1-建立仓库"><a href="#1-建立仓库" class="headerlink" title="1.建立仓库"></a>1.建立仓库</h4><p>首先你需要有一个coding官方账号，你也可以通过微信直接登录，你可以<a target="_blank" rel="noopener" href="https://coding.net/">点击这里前往Coding官网</a></p>
 <p>创建完成登录后会进入工作台界面</p>
+<img src="https://note.youdao.com/yws/api/personal/file/21D11BA0A7E44BDCB05210BB3B93C0EA?method=download&shareKey=4ec967fabcc8db03f974e35c1b9fc5b9" alt="工作台界面" style="zoom:80%;" />
+
 <p>点击右侧项目–&gt;创建项目–&gt;DevOps项目</p>
+<img src="https://note.youdao.com/yws/api/personal/file/2C41B5A976BD46A9AFB93DF8D5E01D35?method=download&shareKey=bce04ebe8a7ddac3d1e7deebf9a1e107" alt="DevOps项目" style="zoom:80%;" />
+
 <p>项目名称可以自己随便写，我这里以blogs为例，项目标识和项目名称一致就可以了</p>
 <p>创建完成项目后，点击左侧代码仓库–&gt;新建代码仓库</p>
 <img src="https://note.youdao.com/yws/api/personal/file/13955077FB9C4250B31AC4A8DC2C6CAF?method=download&shareKey=ebc58affbfe439c2e84cc1c6ed8859a6" style="zoom:80%;" />
@@ -614,7 +618,38 @@ hexo s #命令简写</code></pre>
 <img src="https://note.youdao.com/yws/api/personal/file/A33B0F21890F43879C91529595B168DE?method=download&shareKey=e22038c9bf9f2a257d6d5c47c6d069f9" style="zoom:80%;" />
 
 <p>创建好后，不进行初始化也可以，复制好这串仓库地址，一会儿部署时需要用到</p>
-
+<h4 id="2-安装部署插件并上传博客到Coding"><a href="#2-安装部署插件并上传博客到Coding" class="headerlink" title="2.安装部署插件并上传博客到Coding"></a>2.安装部署插件并上传博客到Coding</h4><p>要把博客部署到Coding前我们还需要装一个插件，你可以通过以下命令来安装：</p>
+<pre><code>cnpm install --save hexo-deployer-git #安装git部署插件（注意要在Hexo根目录下）</code></pre>
+<p>安装完成后，我们需要打开hexo博客根目录下的_config.yml来配置**(该内容在配置文件最下方)**</p>
+<pre><code>#配置_config.yml 
+-----
+    # Deployment
+    ## Docs: https://hexo.io/docs/deployment.html
+    deploy:
+          type: git
+         repo: #这里填写你的Coding代码仓库地址
+          branch: master
+-----</code></pre>
+<p>下面是我的，由于我对多个仓库都进行了部署，你们可以参考我的来多仓库部署：</p>
+<pre><code># Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: 
+    coding: https://e.coding.net/track/blog/blog.git
+    github: https://github.com/baichuan2077/baichuan2077.github.io.git
+    # gitee: https://gitee.com/baichuan2077/blog
+  branch: master</code></pre>
+<p>配置完成保存后就可以准备上传博客了</p>
+<pre><code>hexo deploy #部署到远端
+hexo d #部署到远端，简写</code></pre>
+<p>推荐每次部署时执行以下命令</p>
+<pre><code>hexo clean #清除网页缓存
+hexo generate #重新生成
+hexo deploy #部署到远端</code></pre>
+<p>上传过程中需要输入账号和密码（Coding)</p>
+<p>上传完成后刷新仓库你就可以看到文件了</p>
+<h4 id="3-配置Coding静态网页"><a href="#3-配置Coding静态网页" class="headerlink" title="3.配置Coding静态网页"></a>3.配置Coding静态网页</h4>
             </div>
             <hr/>
 
