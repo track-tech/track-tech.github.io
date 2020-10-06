@@ -452,14 +452,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-06
+                    2020-10-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.5k
                 </div>
                 
 
@@ -642,8 +642,27 @@ hexo generate #重新生成
 hexo deploy #部署到远端</code></pre>
 <p>上传过程中需要输入账号和密码（Coding)</p>
 <p>上传完成后刷新仓库你就可以看到文件了</p>
-<h4 id="3-配置Coding静态网页"><a href="#3-配置Coding静态网页" class="headerlink" title="3.配置Coding静态网页"></a>3.配置Coding静态网页</h4><p>（昨天写在半夜，看配置页面改了，今天再写）</p>
-<h5 id="1-gt-旧版"><a href="#1-gt-旧版" class="headerlink" title="1&gt; 旧版"></a>1&gt; 旧版</h5><h5 id="2-gt-新版"><a href="#2-gt-新版" class="headerlink" title="2&gt;新版"></a>2&gt;新版</h5>
+<h4 id="3-配置Coding静态网页"><a href="#3-配置Coding静态网页" class="headerlink" title="3.配置Coding静态网页"></a>3.配置Coding静态网页</h4><p>（昨天写在半夜，看配置页面改了，今天再写）（新版权限很迷惑，有点搞不来）</p>
+<h5 id="1-gt-旧版"><a href="#1-gt-旧版" class="headerlink" title="1&gt; 旧版"></a>1&gt; 旧版</h5><p><a target="_blank" rel="noopener" href="https://help.coding.net/docs/cd/static-website.html">点击这里查看旧版官方文档</a></p>
+<p>这里官方有详细的教程，我就不写了</p>
+<h5 id="2-gt-新版"><a href="#2-gt-新版" class="headerlink" title="2&gt;新版"></a>2&gt;新版</h5><p>新版总是会报错，部署失败，在运行Shell脚本那一步，我查看日志中提到用户权限不足，但实际权限是有的，我用了主账户，如果有大佬看到麻烦在评论中给我讲解一下</p>
+<p><a target="_blank" rel="noopener" href="https://help.coding.net/docs/cd/static-website-v2.html?_ga=2.135543153.1397851094.1601778487-1036921730.1600955029">点击这里查看新版官方文档</a></p>
+<h3 id="Ⅲ-常用Hexo命令"><a href="#Ⅲ-常用Hexo命令" class="headerlink" title="Ⅲ.常用Hexo命令"></a>Ⅲ.常用Hexo命令</h3><pre><code>hexo n &quot;标题&quot; = hexo new &quot;标题&quot; #新建文章
+hexo clean #清理网页缓存
+hexo g = hexo generate #生成静态文件
+hexo s = hexo server #启动服务预览
+hexo d = hexo deploy #部署到远端</code></pre>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>基础篇到这里就算结束了，第一次写，文章肯定会有很多不足之处，希望大家多多指正，如果有问题或者指正的地方请在下方评论区留言</p>
+<p>下次写个人美化博客的过程</p>
+<p>​                                                                                                                                                                                                                 —2020/10/7</p>
+<hr>
+<blockquote>
+<p>本篇文章用到的参考资料:</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&seid=3554719333100371618">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo—codesheep</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo中文文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://help.coding.net/">Coding官方帮助中心文档</a></p>
+</blockquote>
+
             </div>
             <hr/>
 
