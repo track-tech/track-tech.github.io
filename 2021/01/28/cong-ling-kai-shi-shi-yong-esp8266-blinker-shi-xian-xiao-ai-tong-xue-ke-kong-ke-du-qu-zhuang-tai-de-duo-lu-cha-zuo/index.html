@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.4k
                 </div>
                 
 
@@ -612,7 +612,7 @@
 <span class="token keyword">int</span> relay1 <span class="token operator">=</span> D5<span class="token punctuation">;</span>
 <span class="token keyword">int</span> relay2 <span class="token operator">=</span> D6<span class="token punctuation">;</span>
 
-bool oState<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> false <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//检测用</span>
+bool oState<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> false <span class="token punctuation">}</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//检测用</span>
 
 <span class="token keyword">char</span> auth<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"3b7f4fafab03"</span><span class="token punctuation">;</span>
 <span class="token keyword">char</span> ssid<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"HY"</span><span class="token punctuation">;</span>
@@ -625,55 +625,55 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
 
 <span class="token comment" spellcheck="true">// 按下按键1即会执行该函数</span>
 <span class="token keyword">void</span> <span class="token function">button1_callback</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> state<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
     <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"get button1 state: "</span><span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">digitalWrite</span><span class="token punctuation">(</span>relay1<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>relay1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token comment" spellcheck="true">//oState[1] = !(oState[1]);</span>
 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 如果未绑定的组件1被触发，则会执行其中内容</span>
 <span class="token keyword">void</span> <span class="token function">dataRead1</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> data<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
     <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"Blinker readString: "</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 按下按键2即会执行该函数</span>
 <span class="token keyword">void</span> <span class="token function">button2_callback</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> state<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    
+<span class="token punctuation">{</span>    
     <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"get button2 state: "</span><span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">digitalWrite</span><span class="token punctuation">(</span>relay2<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>relay2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token comment" spellcheck="true">//oState[2] = !(oState[2]);</span>
 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 如果未绑定的组件2被触发，则会执行其中内容</span>
 <span class="token keyword">void</span> <span class="token function">dataRead2</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> data<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
     <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"Blinker readString: "</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
 
 <span class="token keyword">void</span> <span class="token function">miotPowerState</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> state<span class="token punctuation">,</span> uint8_t num<span class="token punctuation">)</span>             <span class="token comment" spellcheck="true">//relay继电器电源状态</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
 
     <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"need set power state: "</span><span class="token punctuation">,</span> state<span class="token punctuation">,</span><span class="token string">"num-back"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token keyword">unsigned</span> <span class="token keyword">char</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//初始化</span>
       <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
-      <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+      <span class="token punctuation">{</span>
         i <span class="token operator">=</span> relay1<span class="token punctuation">;</span>
-      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
       <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
-      <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+      <span class="token punctuation">{</span>
         i <span class="token operator">=</span> relay2<span class="token punctuation">;</span>
-      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
 
 
     <span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> BLINKER_CMD_ON<span class="token punctuation">)</span> 
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token punctuation">{</span>
         <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span><span class="token string">"on"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -682,9 +682,9 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
         <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> true<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
     <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> BLINKER_CMD_OFF<span class="token punctuation">)</span> 
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token punctuation">{</span>
         <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -692,16 +692,16 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
         <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> false<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
 <span class="token keyword">void</span> <span class="token function">miotQuery</span><span class="token punctuation">(</span>int32_t queryCode<span class="token punctuation">,</span> uint8_t num<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
     <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"AliGenie Query outlet: "</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span><span class="token string">", codes: "</span><span class="token punctuation">,</span> queryCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token keyword">switch</span> <span class="token punctuation">(</span>queryCode<span class="token punctuation">)</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token punctuation">{</span>
         <span class="token keyword">case</span> BLINKER_CMD_QUERY_ALL_NUMBER <span class="token punctuation">:</span>
             <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"MIOT Query All"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span>oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token string">"on"</span> <span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -716,11 +716,11 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
             BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span>oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token string">"on"</span> <span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
             BlinkerMIOT<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
 <span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 初始化串口</span>
     Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     BLINKER_DEBUG<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span>Serial<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -741,11 +741,11 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
 
     BlinkerMIOT<span class="token punctuation">.</span><span class="token function">attachPowerState</span><span class="token punctuation">(</span>miotPowerState<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//注册电源函数1</span>
     BlinkerMIOT<span class="token punctuation">.</span><span class="token function">attachQuery</span><span class="token punctuation">(</span>miotQuery<span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment" spellcheck="true">//注册回调函数</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     Blinker<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<span class="token punctuation">}</span></code></pre>
 <h4 id="2-烧录相关"><a href="#2-烧录相关" class="headerlink" title="2.烧录相关"></a>2.烧录相关</h4><p>开发板选择NodeMCU V1.0（ESP-12E Module）</p>
 <p>其余保持默认即可</p>
 <h3 id="五-Blinker-App-amp-小爱绑定第三方设备"><a href="#五-Blinker-App-amp-小爱绑定第三方设备" class="headerlink" title="五.Blinker App &amp;小爱绑定第三方设备"></a>五.Blinker App &amp;小爱绑定第三方设备</h3><h4 id="1-Blinker-App配置相关"><a href="#1-Blinker-App配置相关" class="headerlink" title="1.Blinker App配置相关"></a>1.Blinker App配置相关</h4><p>我在编写时添加了APP内的按钮控制，所以你也可以通过App来手动控制继电器通路状态</p>
