@@ -1343,6 +1343,22 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+
+<!-- һ��API -->
+<!-- ��ʽд�������������� -->
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn/?c=i');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var hitokoto = document.getElementById('hitokoto');
+      hitokoto.innerText = data.hitokoto;
+    }
+  }
+  xhr.send();
+</script>
+
 </body>
 
 </html>

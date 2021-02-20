@@ -615,16 +615,18 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的信条
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;一言
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            努力就会成功？只是成功者给予失败者的安慰罢了。但若是都不去努力，那么你甚至没有资格去接近成功。
+            <p id="hitokoto">正在加载一言...</p>
+            
         </div>
     </div>
 </div>
-
+                        
+                        
                     
 
                     
@@ -1513,6 +1515,22 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+
+<!-- һ��API -->
+<!-- ��ʽд�������������� -->
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn/?c=i');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var hitokoto = document.getElementById('hitokoto');
+      hitokoto.innerText = data.hitokoto;
+    }
+  }
+  xhr.send();
+</script>
 
 </body>
 
