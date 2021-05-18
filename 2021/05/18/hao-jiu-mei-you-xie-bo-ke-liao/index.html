@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="从零开始使用ESP8266 + Blinker实现小爱同学可控可读取状态的多路插座, 极客,ACGN爱好者">
+    <meta name="keywords" content="好久没有写博客了, 极客,ACGN爱好者">
     <meta name="description" content="半个极客,大学生,ACGN爱好者，努力翻身的咸鱼">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>从零开始使用ESP8266 + Blinker实现小爱同学可控可读取状态的多路插座 | Tracker</title>
+    <title>好久没有写博客了 | Tracker</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -299,12 +299,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://note.youdao.com/yws/api/personal/file/17F67B824F524F27B492651CBDC7E142?method=download&shareKey=e8dc882999051db647506ec6aec5e31e')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">从零开始使用ESP8266 + Blinker实现小爱同学可控可读取状态的多路插座</h1>
+                    <h1 class="description center-align post-title">好久没有写博客了</h1>
                 </div>
             </div>
         </div>
@@ -421,20 +421,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                                <span class="chip bg-color">技术</span>
-                            </a>
-                        
-                            <a href="/tags/Arduino/">
-                                <span class="chip bg-color">Arduino</span>
-                            </a>
-                        
-                            <a href="/tags/ESP8266/">
-                                <span class="chip bg-color">ESP8266</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">
-                                <span class="chip bg-color">单片机</span>
+                            <a href="/tags/%E4%B8%AA%E4%BA%BA/">
+                                <span class="chip bg-color">个人</span>
                             </a>
                         
                     </div>
@@ -445,12 +433,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/" class="post-category">
-                                嵌入式
-                            </a>
-                        
-                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/" class="post-category">
-                                个人经验
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E5%8E%86/" class="post-category">
+                                个人经历
                             </a>
                         
                     </div>
@@ -462,21 +446,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-28
+                    2021-05-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-01-28
+                    2021-05-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    23
                 </div>
                 
 
@@ -493,286 +477,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="从零开始使用ESP8266-Blinker-实现小爱同学可控可读取状态的多路插座"><a href="#从零开始使用ESP8266-Blinker-实现小爱同学可控可读取状态的多路插座" class="headerlink" title="从零开始使用ESP8266 + Blinker 实现小爱同学可控可读取状态的多路插座"></a>从零开始使用ESP8266 + Blinker 实现小爱同学可控可读取状态的多路插座</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一直对8266很感兴趣，放寒假嘛，也挺闲，刚好手头有原来买下的Nodemcu，就拿来做个多路开关</p>
-<p>参考资料我会放到文章末尾</p>
-<p>（渣渣新手练手的小东西，求大佬指导）</p>
-<h3 id="一-准备"><a href="#一-准备" class="headerlink" title="一.准备"></a>一.准备</h3><p>1.硬件</p>
-<ul>
-<li>nodemcu(ESP-12E)   </li>
-<li>双路光耦继电器</li>
-</ul>
-<p>2.用到的开发软件</p>
-<ul>
-<li><p>Arduino IDE </p>
-</li>
-<li><p>Blinker APP</p>
-</li>
-</ul>
-<p>3.小爱同学（我使用的是一个小爱闹钟）</p>
-<p>4.准备环境</p>
-<p>5.你自己 Ciallo～(∠・ω&lt; )⌒★</p>
-<h3 id="二-安装相关Arduino库-amp-申请Blinker-Secret-Key"><a href="#二-安装相关Arduino库-amp-申请Blinker-Secret-Key" class="headerlink" title="二.安装相关Arduino库&amp;申请Blinker Secret Key"></a>二.安装相关Arduino库&amp;申请Blinker Secret Key</h3><h4 id="1-安装相关库"><a href="#1-安装相关库" class="headerlink" title="1.安装相关库"></a>1.安装相关库</h4><ul>
-<li><p>esp8266 SDK -由于国内众所周知的原因，使用IDE直接安装不太可靠，你可以<a target="_blank" rel="noopener" href="https://www.arduino.cn/thread-76029-1-1.html">点击这里</a>查看国内安装ESP8266 SDK的方法</p>
-</li>
-<li><p>Blinker Arduino库-你可以从<a target="_blank" rel="noopener" href="https://diandeng.tech/doc/getting-start-8266">Blinker官方文档-ESP8266&amp;WIFI接入</a>获取下载地址以及方法</p>
-</li>
-</ul>
-<h4 id="2-申请Secret-Key"><a href="#2-申请Secret-Key" class="headerlink" title="2.申请Secret Key"></a>2.申请Secret Key</h4><ul>
-<li><p>打开Blinker APP,点击右上角的 “＋”</p>
-</li>
-<li><p>选择独立设备</p>
-</li>
-<li><p>选择WiFi接入</p>
-</li>
-<li><p>通信服务商选择阿里云</p>
-</li>
-<li><p>复制Key</p>
-</li>
-</ul>
-<p>以下为流程图：</p>
-<img src="https://note.youdao.com/yws/api/personal/file/DB7457862A1C41ED9044194145A07F5A?method=download&shareKey=0845bb760aaf51e8eaf491ad5d072052" alt="1" style="zoom:50%;" />
-
-<img src="https://note.youdao.com/yws/api/personal/file/D7118E534A6641419C732169EB12954D?method=download&shareKey=a4d5355eeddfdc4321f4b40ad1f5e2ea" alt="2" style="zoom:50%;" />
-
-<img src="https://note.youdao.com/yws/api/personal/file/C25D65DC7F344A7FA2F38320A63878CD?method=download&shareKey=c7b40219e8b0309de2f773b02f678464" alt="3" style="zoom:50%;" />
-
-<img src="https://note.youdao.com/yws/api/personal/file/CD27BCB0B3CB4A9DB0440302E5888CBA?method=download&shareKey=ca8bc8ecf94b03f353eebee5699fa614" alt="4" style="zoom:50%;" />
-
-<img src="https://note.youdao.com/yws/api/personal/file/093234B8AF1A44E08490D42656F0FC3C?method=download&shareKey=9a9af8105bbc5c3f579cfef8cb0fa51d" alt="5" style="zoom:50%;" />
-
-
-
-
-
-<h3 id="三-连接线路"><a href="#三-连接线路" class="headerlink" title="三.连接线路"></a>三.连接线路</h3><h4 id="1-继电器相关"><a href="#1-继电器相关" class="headerlink" title="1.继电器相关"></a>1.继电器相关</h4><p>在正式开始编程前，我们需要先了解一下继电器模块的模块参数以及说明</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/3733461A34114587877EDBA77E393144?method=download&shareKey=0575ba1227a50e7d0af4957c028fe6f7" alt="继电器说明"></p>
-<img src="https://note.youdao.com/yws/api/personal/file/2B97804AF22A4A0A940DC66AC0C66143?method=download&shareKey=258f32c58e094b3e9ab7074a4a4a4222" alt="双路光耦继电器模块" style="zoom: 25%;" />
-
-
-
-<h4 id="2-Nodemcu相关"><a href="#2-Nodemcu相关" class="headerlink" title="2.Nodemcu相关"></a>2.Nodemcu相关</h4><p>通过查阅资料可以了解到Nodemcu在编程时可以直接使用PCB上的丝印来表示IO口</p>
-<h4 id="3-链接"><a href="#3-链接" class="headerlink" title="3.链接"></a>3.链接</h4><p>GND-GND</p>
-<p>IN1-D5</p>
-<p>IN2-D6</p>
-<p>VCC-VV   (由开发板提供5V)</p>
-<h3 id="四-编写程序-amp-烧写程序"><a href="#四-编写程序-amp-烧写程序" class="headerlink" title="四.编写程序&amp;烧写程序"></a>四.编写程序&amp;烧写程序</h3><h4 id="1-源码"><a href="#1-源码" class="headerlink" title="1.源码"></a>1.源码</h4><pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">/* *****************************************************************
- *
- * Download latest Blinker library here:
- * https://github.com/blinker-iot/blinker-library/archive/master.zip
- * 
- * 
- * Blinker is a cross-hardware, cross-platform solution for the IoT. 
- * It provides APP, device and server support, 
- * and uses public cloud services for data transmission and storage.
- * It can be used in smart home, data monitoring and other fields 
- * to help users build Internet of Things projects better and faster.
- * 
- * Make sure installed 2.7.4 or later ESP8266/Arduino package,
- * if use ESP8266 with Blinker.
- * https://github.com/esp8266/Arduino/releases
- * 
- * Make sure installed 1.0.4 or later ESP32/Arduino package,
- * if use ESP32 with Blinker.
- * https://github.com/espressif/arduino-esp32/releases
- * 
- * Docs: https://diandeng.tech/doc
- *       
- * 
- * *****************************************************************
- * 
- * Blinker 库下载地址:
- * https://github.com/blinker-iot/blinker-library/archive/master.zip
- * 
- * Blinker 是一套跨硬件、跨平台的物联网解决方案，提供APP端、设备端、
- * 服务器端支持，使用公有云服务进行数据传输存储。可用于智能家居、
- * 数据监测等领域，可以帮助用户更好更快地搭建物联网项目。
- * 
- * 如果使用 ESP8266 接入 Blinker,
- * 请确保安装了 2.7.4 或更新的 ESP8266/Arduino 支持包。
- * https://github.com/esp8266/Arduino/releases
- * 
- * 如果使用 ESP32 接入 Blinker,
- * 请确保安装了 1.0.4 或更新的 ESP32/Arduino 支持包。
- * https://github.com/espressif/arduino-esp32/releases
- * 
- * 文档: https://diandeng.tech/doc
- *       
- * 
- * *****************************************************************
- *
- *
- * -使用ESP8266控制双路光耦继电器，可接入小米小爱，通过小爱控制&amp;查询当前状态-
- *
- * by Tracker     
- * My blog:https://baichuan2077.top
- * *****************************************************************/</span>
-
-<span class="token macro property">#<span class="token directive keyword">define</span> BLINKER_WIFI</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> BLINKER_MIOT_MULTI_OUTLET</span>
-
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Blinker.h></span></span>
-
-<span class="token comment" spellcheck="true">//继电器控制口</span>
-<span class="token keyword">int</span> relay1 <span class="token operator">=</span> D5<span class="token punctuation">;</span>
-<span class="token keyword">int</span> relay2 <span class="token operator">=</span> D6<span class="token punctuation">;</span>
-
-bool oState<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> false <span class="token punctuation">}</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//检测用</span>
-
-<span class="token keyword">char</span> auth<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Key密匙"</span><span class="token punctuation">;</span>
-<span class="token keyword">char</span> ssid<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"SSID"</span><span class="token punctuation">;</span>
-<span class="token keyword">char</span> pswd<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"密码"</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// 新建组件对象</span>
-BlinkerButton <span class="token function">Button1</span><span class="token punctuation">(</span><span class="token string">"btn-1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-BlinkerButton <span class="token function">Button2</span><span class="token punctuation">(</span><span class="token string">"btn-2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-
-<span class="token comment" spellcheck="true">// 按下按键1即会执行该函数</span>
-<span class="token keyword">void</span> <span class="token function">button1_callback</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> state<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"get button1 state: "</span><span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>relay1<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>relay1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">//oState[1] = !(oState[1]);</span>
-
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// 如果未绑定的组件1被触发，则会执行其中内容</span>
-<span class="token keyword">void</span> <span class="token function">dataRead1</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> data<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"Blinker readString: "</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// 按下按键2即会执行该函数</span>
-<span class="token keyword">void</span> <span class="token function">button2_callback</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> state<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>    
-    <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"get button2 state: "</span><span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>relay2<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>relay2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">//oState[2] = !(oState[2]);</span>
-
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// 如果未绑定的组件2被触发，则会执行其中内容</span>
-<span class="token keyword">void</span> <span class="token function">dataRead2</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> data<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"Blinker readString: "</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-
-<span class="token keyword">void</span> <span class="token function">miotPowerState</span><span class="token punctuation">(</span><span class="token keyword">const</span> String <span class="token operator">&amp;</span> state<span class="token punctuation">,</span> uint8_t num<span class="token punctuation">)</span>             <span class="token comment" spellcheck="true">//relay继电器电源状态</span>
-<span class="token punctuation">{</span>
-
-    <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"need set power state: "</span><span class="token punctuation">,</span> state<span class="token punctuation">,</span><span class="token string">"num-back"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">unsigned</span> <span class="token keyword">char</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//初始化</span>
-      <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
-      <span class="token punctuation">{</span>
-        i <span class="token operator">=</span> relay1<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
-      <span class="token punctuation">{</span>
-        i <span class="token operator">=</span> relay2<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-
-
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> BLINKER_CMD_ON<span class="token punctuation">)</span> 
-    <span class="token punctuation">{</span>
-        <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span><span class="token string">"on"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        BlinkerMIOT<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> true<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> BLINKER_CMD_OFF<span class="token punctuation">)</span> 
-    <span class="token punctuation">{</span>
-        <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span><span class="token string">"off"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        BlinkerMIOT<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">digitalWrite</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> false<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-<span class="token punctuation">}</span>
-
-<span class="token keyword">void</span> <span class="token function">miotQuery</span><span class="token punctuation">(</span>int32_t queryCode<span class="token punctuation">,</span> uint8_t num<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"AliGenie Query outlet: "</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span><span class="token string">", codes: "</span><span class="token punctuation">,</span> queryCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">switch</span> <span class="token punctuation">(</span>queryCode<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> BLINKER_CMD_QUERY_ALL_NUMBER <span class="token punctuation">:</span>
-            <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"MIOT Query All"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span>oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token string">"on"</span> <span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            BlinkerMIOT<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> BLINKER_CMD_QUERY_POWERSTATE_NUMBER <span class="token punctuation">:</span>
-            <span class="token function">BLINKER_LOG</span><span class="token punctuation">(</span><span class="token string">"MIOT Query Power State"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span>oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token string">"on"</span> <span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            BlinkerMIOT<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">default</span> <span class="token punctuation">:</span>
-            BlinkerMIOT<span class="token punctuation">.</span><span class="token function">powerState</span><span class="token punctuation">(</span>oState<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token string">"on"</span> <span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            BlinkerMIOT<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// 初始化串口</span>
-    Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    BLINKER_DEBUG<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span>Serial<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    BLINKER_DEBUG<span class="token punctuation">.</span><span class="token function">debugAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">// 初始化IO</span>
-    <span class="token function">pinMode</span><span class="token punctuation">(</span>relay1<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>relay1<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">pinMode</span><span class="token punctuation">(</span>relay2<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>relay2<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">// 初始化blinker</span>
-    Blinker<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span>auth<span class="token punctuation">,</span> ssid<span class="token punctuation">,</span> pswd<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    Blinker<span class="token punctuation">.</span><span class="token function">attachData</span><span class="token punctuation">(</span>dataRead1<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token comment" spellcheck="true">//获取1</span>
-    Blinker<span class="token punctuation">.</span><span class="token function">attachData</span><span class="token punctuation">(</span>dataRead2<span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token comment" spellcheck="true">//获取2</span>
-
-    Button1<span class="token punctuation">.</span><span class="token function">attach</span><span class="token punctuation">(</span>button1_callback<span class="token punctuation">)</span><span class="token punctuation">;</span>              <span class="token comment" spellcheck="true">//按钮1</span>
-    Button2<span class="token punctuation">.</span><span class="token function">attach</span><span class="token punctuation">(</span>button2_callback<span class="token punctuation">)</span><span class="token punctuation">;</span>              <span class="token comment" spellcheck="true">//按钮2</span>
-
-    BlinkerMIOT<span class="token punctuation">.</span><span class="token function">attachPowerState</span><span class="token punctuation">(</span>miotPowerState<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//注册电源函数1</span>
-    BlinkerMIOT<span class="token punctuation">.</span><span class="token function">attachQuery</span><span class="token punctuation">(</span>miotQuery<span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment" spellcheck="true">//注册回调函数</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    Blinker<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h4 id="2-烧录相关"><a href="#2-烧录相关" class="headerlink" title="2.烧录相关"></a>2.烧录相关</h4><p>开发板选择NodeMCU V1.0（ESP-12E Module）</p>
-<p>其余保持默认即可</p>
-<h3 id="五-Blinker-App-amp-小爱绑定第三方设备"><a href="#五-Blinker-App-amp-小爱绑定第三方设备" class="headerlink" title="五.Blinker App &amp;小爱绑定第三方设备"></a>五.Blinker App &amp;小爱绑定第三方设备</h3><h4 id="1-Blinker-App配置相关"><a href="#1-Blinker-App配置相关" class="headerlink" title="1.Blinker App配置相关"></a>1.Blinker App配置相关</h4><p>我在编写时添加了APP内的按钮控制，所以你也可以通过App来手动控制继电器通路状态</p>
-<img src="https://note.youdao.com/yws/api/personal/file/51EF2C7317E44E72A8BA4411D999CC85?method=download&shareKey=de095fb505b473d851c8b64826114890" alt="APP内" style="zoom:25%;" />
-
-
-
-<h4 id="2-小米小爱绑定第三方设备"><a href="#2-小米小爱绑定第三方设备" class="headerlink" title="2.小米小爱绑定第三方设备"></a>2.小米小爱绑定第三方设备</h4><p>以我的小爱闹钟为例:</p>
-<p>米家-我的-其他平台设备-右上角“添加”-选择“点灯科技”-绑定账户并同步设备</p>
-<h2 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h2><p>最后我们可以通过小爱同学来控制插孔 以及查询插孔状态，还可以通过Blinker App来控制开关</p>
-<p>语音指令例：</p>
-<p>-打开插座插孔一</p>
-<p>-插座插孔二的状态</p>
-<p>由于我手头只有双路继电器，并不能展示更多路的控制</p>
-<hr>
-<blockquote>
-<p>使用到的参考资料：</p>
-<p><a target="_blank" rel="noopener" href="https://diandeng.tech/doc/home">点灯科技官方开发文档</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.arduino.cn/thread-83846-1-1.html">nodeMCU 1.0简要数据手册</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.arduino.cn/thread-102599-1-1.html">Arduino论坛参考帖-【智能取暖器DIY】ESP32+blinker接入小爱同学语音控制</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.arduino.cn/thread-93958-1-2.html">Arduino论坛参考帖-小爱同学+Blinker如何控制多个继电器？</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/blinker-iot/blinker-library/blob/master/examples/Blinker_MIOT/MIOT_MULTI_OUTLET/MIOT_MULTI_OUTLET.ino">Blinker官方例程-<strong>MIOT_MULTI_OUTLET.ino</strong></a></p>
-</blockquote>
+                <p>最近真是又累又忙，还很迷茫啊，究竟该不该转专业呢，唉</p>
 
             </div>
             <hr/>
@@ -798,7 +503,7 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://baichuan2077.top/2021/01/28/cong-ling-kai-shi-shi-yong-esp8266-blinker-shi-xian-xiao-ai-tong-xue-ke-kong-ke-du-qu-zhuang-tai-de-duo-lu-cha-zuo/">https://baichuan2077.top/2021/01/28/cong-ling-kai-shi-shi-yong-esp8266-blinker-shi-xian-xiao-ai-tong-xue-ke-kong-ke-du-qu-zhuang-tai-de-duo-lu-cha-zuo/</a>
+                    <a href="https://baichuan2077.top/2021/05/18/hao-jiu-mei-you-xie-bo-ke-liao/">https://baichuan2077.top/2021/05/18/hao-jiu-mei-you-xie-bo-ke-liao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -836,20 +541,8 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                                    <span class="chip bg-color">技术</span>
-                                </a>
-                            
-                                <a href="/tags/Arduino/">
-                                    <span class="chip bg-color">Arduino</span>
-                                </a>
-                            
-                                <a href="/tags/ESP8266/">
-                                    <span class="chip bg-color">ESP8266</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">
-                                    <span class="chip bg-color">单片机</span>
+                                <a href="/tags/%E4%B8%AA%E4%BA%BA/">
+                                    <span class="chip bg-color">个人</span>
                                 </a>
                             
                         </div>
@@ -1154,9 +847,10 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/05/18/hao-jiu-mei-you-xie-bo-ke-liao/">
                     <div class="card-image">
@@ -1174,9 +868,9 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1189,6 +883,7 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1207,34 +902,34 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/26/86-bu-cun-zai-de-zhan-qu-shao-nian-yu-shao-nu-zhan-chang-zhong-de-wu-ren-ji-zhi-xie/">
+                <a href="/2021/01/28/cong-ling-kai-shi-shi-yong-esp8266-blinker-shi-xian-xiao-ai-tong-xue-ke-kong-ke-du-qu-zhuang-tai-de-duo-lu-cha-zuo/">
                     <div class="card-image">
                         
-                        <img src="https://note.youdao.com/yws/api/personal/file/7BCC540EA41744BC8C3760ADE00A2694?method=download&shareKey=6b67f3b10dd4f4b85baa07aabf04d8bf" class="responsive-img" alt="《86-不存在的戰區》——少年与少女，战场中的“无人机”之血">
+                        <img src="https://note.youdao.com/yws/api/personal/file/17F67B824F524F27B492651CBDC7E142?method=download&shareKey=e8dc882999051db647506ec6aec5e31e" class="responsive-img" alt="从零开始使用ESP8266 + Blinker实现小爱同学可控可读取状态的多路插座">
                         
-                        <span class="card-title">《86-不存在的戰區》——少年与少女，战场中的“无人机”之血</span>
+                        <span class="card-title">从零开始使用ESP8266 + Blinker实现小爱同学可控可读取状态的多路插座</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这世上没有任何国家，会因为国内饲养的猪只未获人权而受到谴责。　　
+                            兴趣使然的小作品
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%BB%E5%B0%8F%E8%AF%B4/" class="post-category">
-                                    轻小说
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/" class="post-category">
+                                    嵌入式
                                 </a>
                             
-                            <a href="/categories/%E8%BD%BB%E5%B0%8F%E8%AF%B4/%E9%98%85%E8%AF%BB%E6%84%9F%E6%83%B3/" class="post-category">
-                                    阅读感想
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/" class="post-category">
+                                    个人经验
                                 </a>
                             
                             
@@ -1244,12 +939,20 @@ BlinkerButton <span class="token function">Button2</span><span class="token punc
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E3%80%8A86-%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%88%B0%E5%8D%80%E3%80%8B/">
-                        <span class="chip bg-color">《86-不存在的戰區》</span>
+                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                        <span class="chip bg-color">技术</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/">
-                        <span class="chip bg-color">轻小说</span>
+                    <a href="/tags/Arduino/">
+                        <span class="chip bg-color">Arduino</span>
+                    </a>
+                    
+                    <a href="/tags/ESP8266/">
+                        <span class="chip bg-color">ESP8266</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">
+                        <span class="chip bg-color">单片机</span>
                     </a>
                     
                 </div>
