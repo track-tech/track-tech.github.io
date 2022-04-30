@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset='utf8'>
+  <title>EverAPI Demo</title>
+  <!-- 引入 EverAPI 脚本文件 -->
+  <script src="https://evercraft.co/api/everapi.js"></script>
+</head>
+
+<body>
+  <h1>EverAPI 2.0 快速入门</h1>
+  <div id="root"></div>
+  <script>
+    // EverAPI 配置
+    const config = {}
+
+    // api 是否已经加载成够的标志位
+    let apiLoaded = false
+
+    // 新建 api 实例
+    // 构造函数的前两个参数分别是 AppID 和 AppKey，这里的参数可用于本地 localhost:9000 调试
+    const api = new EverAPI('<APP_ID>', '<APP_KEY>', config)
+
+    // api 加载成功后调用 loadApi 函数
+    window.addEventListener('oneverapiloaded', () => {
+      // 此处放需要渲染的文件
+      const files = [{ filename: 'NEO__a.stl', url: './NEO__a.stl' }]
+      loadApi(files)
+    })
+
+    // 此函数中调用 api 的 render 方法，在网页中加载出 api 窗口
+    function loadApi (files) {
+      // 此方法的第一个参数为放置 dom 元素的 id，第二个参数为需要在 api 中显示的模型的数组
+      api.render('root', files)
+      apiLoaded = true
+    }
+  </script>
+</body>
+
+</html>
